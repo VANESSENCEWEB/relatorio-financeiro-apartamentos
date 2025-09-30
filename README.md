@@ -33,13 +33,13 @@
 │        RELATÓRIO FINANCEIRO MENSAL          │
 │              JULHO DE 2025                  │
 │                                             │
-│              APT-1006                       │
+│              APARTAMENTO 101                │
 │                                             │
-│    Av. Eng. Domingos Ferreira, N°2041     │
-│       Edifício Golden View - Apt 1006      │
-│           Boa Viagem - Recife - PE         │
+│             RUA EXEMPLO, N°123              │
+│         Edifício Exemplo - Apt 101          │
+│            Bairro - Cidade - SP             │
 │                                             │
-│         RECIFE FLATS TEMPORADA LTDA        │
+│           SUA EMPRESA LTDA                  │
 └─────────────────────────────────────────────┘
 ```
 
@@ -149,25 +149,28 @@ python src/gerador_relatorios.py --mes 7 --ano 2025
 #### Planilha Excel com 3 abas obrigatórias:
 
 **📋 Aba "Reservas"**
-```
-apartamento | hóspede      | check_in  | check_out | valor     | status
-APT-105     | João Silva   | 01/07/25  | 05/07/25  | R$ 1.200  | Pago
-APT-203     | Maria Santos | 10/07/25  | 15/07/25  | R$ 980    | Pendente
-```
+
+| apartamento | hóspede | check_in | check_out | valor | status |
+|-------------|---------|----------|-----------|-------|--------|
+| APT-105 | João Silva | 01/07/25 | 05/07/25 | R$ 1.200 | Pago |
+| APT-203 | Maria Santos | 10/07/25 | 15/07/25 | R$ 980 | Pendente |
+| APT-1006 | Carlos Lima | 20/07/25 | 25/07/25 | R$ 1.500 | Pago |
 
 **🔒 Aba "Caucao"**
-```
-apartamento | hóspede      | valor_caucao | status    | valor_devolvido
-APT-105     | João Silva   | R$ 500       | Devolvido | R$ 500
-APT-203     | Maria Santos | R$ 300       | Retido    | R$ 250
-```
+
+| apartamento | hóspede | valor_caucao | status | valor_devolvido |
+|-------------|---------|--------------|--------|-----------------|
+| APT-105 | João Silva | R$ 500 | Devolvido | R$ 500 |
+| APT-203 | Maria Santos | R$ 300 | Retido | R$ 250 |
+| APT-1006 | Carlos Lima | R$ 600 | Devolvido | R$ 600 |
 
 **💳 Aba "Despesas"**
-```
-apartamento | data     | categoria | descrição           | valor    | status
-APT-105     | 05/07/25 | Limpeza   | Faxina pós-hóspede | R$ 80    | Pago
-APT-203     | 12/07/25 | Manutenção| Troca fechadura     | R$ 120   | Pendente
-```
+
+| apartamento | data | categoria | descrição | valor | status |
+|-------------|------|-----------|-----------|-------|--------|
+| APT-105 | 05/07/25 | Limpeza | Faxina pós-hóspede | R$ 80 | Pago |
+| APT-203 | 12/07/25 | Manutenção | Troca fechadura | R$ 120 | Pendente |
+| APT-1006 | 18/07/25 | Condomínio | Taxa mensal | R$ 450 | Pago |
 
 ### 💻 Comandos Essenciais
 ```bash
@@ -352,7 +355,7 @@ Este projeto é licenciado sob **MIT License** - uso comercial permitido.
 
 ## 🙏 Agradecimentos Especiais
 
-- **🏢 Recife Flats Temporada** - Confiança no projeto e dados reais
+- **🏢 Cliente Real** - Confiança no projeto e dados para validação
 - **👥 Comunidade Python** - Bibliotecas incríveis e documentação
 - **📚 Stack Overflow** - Respostas para dúvidas específicas
 - **🎓 UNICAP** - Base sólida em desenvolvimento
